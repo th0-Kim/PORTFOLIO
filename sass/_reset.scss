@@ -1,0 +1,95 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+*{
+    margin: 0; 
+    padding: 0;
+}
+ul, ol, li{
+    list-style: none;
+}
+a{
+    text-decoration: none; 
+    color: #444;
+}
+body, .textareaWrap{
+    font-family: 'nanumgothic', '나눔고딕', sans-serif;
+}
+.blind, caption{
+    font-size: 0; 
+    position: absolute; 
+    top: -999999px;
+    width: 1px; 
+    height: 0;
+}
+.clearfix{
+    clear: both; 
+    overflow: hidden;
+}
+::selection{
+    background-color: rgba(24,190,176,0.7);
+}
+
+//color type
+$hdBgColor : rgba(24,190,176,1);
+$fdBgColor : #666;
+$darkBgcolor : rgba(0,0,0,0.3);
+$txtColor01 : #fff;
+$txtColor02 : #1b10ad;
+
+// border Type
+@mixin borderType01 ($bTop:1px,$bRight:1px,$bBottom:1px,$bLeft:1px,$bColor:null, $bStyle:solid) {
+    border-top-width: $bTop;
+    border-right-width: $bRight;
+    border-bottom-width: $bBottom;
+    border-left-width: $bLeft;
+	border-color: $bColor;
+	border-style: $bStyle;
+}
+@mixin borderTheme($borderThm) {
+	@if $borderThm == 'pointBorder' {
+		@include borderType01(red);
+	}
+	@else if $borderThm == 'yellow'{
+		@include borderType01(yellow);
+	}
+	@else {
+		@include borderType01(#fff);
+	}
+}
+
+// position type Theme
+@mixin positType($display:block, $position:static) {
+	display: $display;
+	position: $position;
+}
+@mixin positTheme($posit) {
+	@if $posit == 'fixed' {
+		@include positType( block, fixed);
+	}
+	@else if $posit == 'absolute'{
+		@include positType( block, absolute);
+	}
+	@else if $posit == 'relative'{
+		@include positType( block, relative);
+	}
+	@else {
+		@include positType( block, static);
+	}
+}
+
+// opacity transition Theme
+@mixin opaciTrans($opacity, $transition: all 0.5s) {
+	opacity: $opacity;
+	transition: $transition;
+}
+@mixin opacityTheme($opacityTheme) {
+	@if $opacityTheme == 'half' {
+		@include opaciTrans (0.5);
+	}	
+	@else if $opacityTheme == 'soft' {
+		@include opaciTrans (0.8);
+	}
+	@else {
+		@include opaciTrans(1)
+	}
+}
