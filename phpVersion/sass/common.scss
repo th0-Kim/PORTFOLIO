@@ -1,0 +1,109 @@
+@import 'reset';
+@import 'jQuerys_st';
+.header{
+	background-color: $hdBgColor;
+	@include opacityTheme('half');
+	
+	&:hover{
+		@include opacityTheme('soft');
+	}
+	&.on{
+		@include positTheme('fixed');
+		left: 0; 
+		top: 0; 
+		z-index: 9999; 
+		width: 100%;
+		@include opacityTheme('soft');
+
+		& .gnb a{
+			line-height: 50px;
+		}
+	}
+
+	.gnb{
+		width: 600px;
+		margin: 0 auto;
+
+		& a{
+			@include positTheme('relative');
+			float: left; 
+			width: 33.333%; 
+			text-align: center; 
+			line-height: 80px; 
+			color: $txtColor01;	
+			box-sizing: border-box;
+			
+			& .arrow{
+				@include positTheme('absolute');
+				left: 0;
+				top: 50px;
+				z-index: 5;
+				width: 0;
+				height: 11px;
+			}
+			@keyframes arrow{
+				0%{width: 1px;}
+				30%{width: 100%;}
+				100%{width: 100%;}
+			}
+			
+			&:hover .arrow{
+				background: url(../images/arrow02.png) no-repeat; 
+				animation: arrow 5s linear 0.3s 3;
+			}
+		
+			&.middle{
+				@include borderType01(0,1px,0,1px,#fff);
+			}
+	
+			&.MyName {
+				&:after{
+					content:'KIM . SO . YOUNG';
+				}	
+				&:hover{
+					font-weight: bold; 
+					color: $txtColor02; 
+					@include opacityTheme('normal');
+					cursor: default;
+					
+					&:after{
+						content:'010 . 3287 . 3001';
+					}
+				}
+			}
+		}
+	}
+}
+
+footer{
+	margin-top: 50px; 
+	padding: 30px 0;
+	text-align: center; 
+	line-height: 30px; 
+	color: $txtColor01; 
+	background-color: $fdBgColor; 
+
+	& a{
+		color: $txtColor01;
+	}
+
+	.top{
+		@include positTheme('fixed');
+		bottom: 100px; 
+		right: 50px; 
+		z-index: 100; 
+		width: 50px; 
+		height: 50px; 
+		font-size: 1.5em; 
+		line-height: 50px; 
+		color: $txtColor01; 
+		border-radius: 100px;
+		background-color: $darkBgcolor; 
+	
+		&.on{
+			bottom: 50px; 
+			@include opacityTheme('normal');
+		}
+	}
+}
+
