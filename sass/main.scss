@@ -1,0 +1,43 @@
+
+%transiType {
+    transition: all 0.5s;
+}
+.mainBtn{
+    position: fixed; 
+    left: 20%; 
+    right: 20%; 
+    top: 40%; 
+    margin: 0 auto;
+    a{
+        display: block;
+        position: relative;
+        width: 40%; 
+        overflow: hidden;
+        font-size: 2em;
+        text-align: center; 
+        line-height: 100px;
+        color: #fff;
+        text-shadow: 56px 1px 5px #000;
+        border-radius: 1px; 
+        background-color: #eee;
+        @extend %transiType;
+        &:hover, 
+        &.on{
+            color: #fff;
+            text-shadow: 2px 1px 3px #000;
+            background-color: transparent;
+            @extend %transiType;
+        }
+    }
+
+@media screen and (max-width: 768px){
+    & {
+        top: 25%;
+
+        & a{
+            width: 100%; 
+            margin-bottom: 50px;
+        }
+    }
+}
+}
