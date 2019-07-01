@@ -1,43 +1,33 @@
-.mainBtn a, .mainBtn a:hover, .mainBtn a.on {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+@charset "utf-8";
+.mainBtn{position: fixed; left: 20%; right: 20%; top: 40%; margin: 0 auto;}
+.mainBtn a{
+	display: block;
+	position: relative;
+	width: 40%; 
+	text-align: center; 
+	line-height: 100px;
+	text-shadow: 56px 1px 5px #000;
+	color: #fff;
+	font-size: 2em;
+	transition: all 0.5s;
+	border-radius: 1px; 
+	/*border: 1px solid #358d6b;*/
+	background-color: #eee;
+	overflow: hidden;
 }
 
-.mainBtn {
-  position: fixed;
-  left: 20%;
-  right: 20%;
-  top: 40%;
-  margin: 0 auto;
-}
+.pBtn{float: left;}
+.jBtn{float: right;}
 
-.mainBtn a {
-  display: block;
-  position: relative;
-  width: 40%;
-  overflow: hidden;
-  font-size: 2em;
-  text-align: center;
-  line-height: 100px;
-  color: #fff;
-  text-shadow: 56px 1px 5px #000;
-  border-radius: 1px;
-  background-color: #eee;
-}
+.mainBtn a:hover, .mainBtn a.on{text-shadow: 2px 1px 3px #000; transition: all 0.5s; /* box-shadow :0px 3px 5px 0px rgba(0,0,0,0.18); */ color: #fff; background-color: transparent;}
+.mainBtn .effect{position: relative; display: block; z-index: 10;}
+/* .mainBtn a:before, .effect:before, .mainBtn a:after {position: absolute; left: 0; right: 100%; height: 1px; content: ''; background-color: #358d6b;}		
+.mainBtn a:hover:before, .mainBtn a:hover:after{right: 0; transition-property: right; transition-duration: 0.8s; background: linear-gradient(to right,#358d6b,#feff9d,#bf8f29);}
+.mainBtn a:after{bottom: -1px;}
+.mainBtn a:before{top: -1px;}
+.mainBtn a:hover .effect:before {top: -1px; bottom: -1px; left: auto; right: -1px; width: 1px; height: 102px; background-color: #bf8f29; transition-property: height; transition-delay: 0.8s;} */
 
-.mainBtn a:hover, .mainBtn a.on {
-  color: #fff;
-  text-shadow: 2px 1px 3px #000;
-  background-color: transparent;
+@media screen and (max-width: 768px){
+	.mainBtn{top: 25%;}
+	.mainBtn a{width: 100%; margin-bottom: 50px;}
 }
-
-@media screen and (max-width: 768px) {
-  .mainBtn {
-    top: 25%;
-  }
-  .mainBtn a {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-}
-/*# sourceMappingURL=main.css.map */

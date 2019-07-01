@@ -17,7 +17,7 @@ $(document).ready(function(){
 	 //security
 
 	 //top
-	var $topScroll = $("footerr") // 0~ 653
+	var $topScroll = $("footer") // 0~ 653
 	var $topScrollTop = $("footer").offset().bottom; //1011
 
 	 $(window).scroll(function(e){

@@ -1,0 +1,10 @@
+@font-face{
+	font-family: 'Questrial-Regular';
+	src:url('Questrial-Regular.eot');
+	src:local(※), url('Questrial-Regular.woff') format('woff');
+}
+
+body{ 
+	font-family: 
+	'Questrial-Regular', 'NanumBarunGothic', arial;
+	}

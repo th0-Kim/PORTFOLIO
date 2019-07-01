@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="2019 웹 퍼블리셔 포트폴리오, 웹코딩, HTML,HTML5,CSS,CSS3,SASS,SCSS,LESS,jQuery,Javascript">
+	<meta name="keywords" content="th03001, portfolio, publisher">
+	<title>portfolio</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css">
+
+  
+	 <!--[if lt IE 9]>
+	<script src="dist/html5shiv.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js">IE7_PNG_SUFFIX=".png";</script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
+	
+</head>
+<body>
+    <div id="wrap">
+        <header class="header bgGary">
+                <nav class="gnb clearfix">
+                    <a href="/" onclick="return false" class="MyName"></a>
+                    <a href="index.html" class="middle">Publishing <b class="arrow"></b></a>
+                    <a href="wic.html">jQuery <b class="arrow"></b></a>
+                </nav>
+        </header>
+        
+        <!-- CONTENTS START -->
+        <section class="contents"  id="top">
+			<div class="wicView">
+				<!-- 소스 영역 -->
+				<div class="sce clearfix">
+					<div class="textareaWrap html">
+						<textarea name="" id="" cols="100" rows="50" readonly oncopy="return false" oncut="return false" onpaste="return false">
+
+		<div class="hdWrap">
+			<nav class="gnb clearfix">
+				<a href="#">Home</a>
+				<a href="#" class="middle">jQuery</a>
+				<a href="#">Publishing</a>
+			</nav>
+		</div>
+
+						</textarea>
+					</div>
+					<div class="textareaWrap css">
+						<textarea name="" id="" cols="100" rows="50" readonly oncopy="return false" oncut="return false" onpaste="return false">
+		.hdWrap{
+			background-color: rgba(24,190,176,1);
+			opacity: 0.5;
+		}
+		.hdWrap:hover{
+			opacity: 0.8; 
+			transition: all 0.5s;
+			}
+		.hdWrap.on{
+			position: fixed; 
+			left: 0; 
+			top: 0; 
+			z-index: 9999; 
+			width: 100%; 
+			background-color: rgb(136, 66, 111);
+			transition: all 0.5s;
+		}
+		.hdWrap .gnb{width: 600px; margin: 0 auto;}
+		.hdWrap .gnb a{
+			display: block; 
+			float: left; 
+			width: 33.333%; 
+			line-height: 80px; 
+			text-align: center; 
+			box-sizing: border-box;
+			color: #fff;
+			}
+		.hdWrap .gnb a.middle{border-left: 1px solid #fff; border-right: 1px solid #fff;}
+		.hdWrap.on .gnb a{line-height: 50px;}	
+						</textarea>
+					</div>
+					<div class="textareaWrap js">
+						<textarea name="" id="" cols="100" rows="50" readonly oncopy="return false" oncut="return false" onpaste="return false">
+						
+		$(document).ready(function(){
+			//SUB SCROLL MENU
+			var st = 0;
+			var $subScrollM = $(".hdWrap")
+			var $subScrollMTop = $(".hdWrap").offset().top;
+
+			$(window).scroll(function(e){
+				st = $(this).scrollTop();
+				if(st > 30){
+					$subScrollM.addClass("on");
+				}else{
+					$subScrollM.removeClass("on");
+				}
+
+			})
+			
+		})
+
+						</textarea>
+					</div>
+				</div>
+				<!-- // 소스 영역 -->
+				<div class="viewArea">
+					<!-- 구현 영역 -->
+					<iframe src="jQuery/scrolltop.html" frameborder="0" class="sample"></iframe>
+					<!-- //구현 영역 -->
+				</div>
+			</div>
+		</section>
+		<!-- CONTENTS END -->
+        <footer>
+            <a href="#top" class="top">Top <span class="blind">으로 이동</span></a>
+            Homepage : <a href="https://th0-kim.github.io/POTPOLIO/">https://th0-kim.github.io/POTPOLIO/</a><br />
+            P · H : 010 - 3287 - 3001<br />
+            E-mail : ksyy3001@naver.com<br />
+            position : Pulisher
+        </footer>
+    </div>
+</body>
+<script src="js/vendor/jquery-2.1.3.min.js"></script>
+<script src="js/vendor/jquery-ui-1.10.3.custom.min.js"></script>
+
+<script type="text/javascript" src="js/velocity.min.js"></script>
+<script type="text/javascript" src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="dist/html5shiv.js"></script>
+<script type="text/javascript" src="js/selectivizr-min.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<script src="js/vendor/jquery.scrollTo.js"></script>
+<!--<script src="js/vendor/jquery.poptrox.min.js"></script>-->
+
+<script>
+	//SUB SCROLL MENU
+	var st = 0;
+	var $subScrollM = $(".hdWrap")
+	var $subScrollMTop = $(".hdWrap").offset().top;
+
+		$(window).scroll(function(e){
+		st = $(this).scrollTop();
+		if(st > 30){
+			$subScrollM.addClass("on");
+		}else{
+				$subScrollM.removeClass("on");
+		}
+
+		})
+</script>
+</html>
