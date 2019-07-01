@@ -1,1 +1,1 @@
-# for POTPOLIO
+# for POTFOLIO
