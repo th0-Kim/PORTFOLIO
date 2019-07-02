@@ -71,7 +71,7 @@ footer .top {
 	background-color: rgba(0, 0, 0, 0.3);
   }
   
-  footer .top.on {
+  footer.on .top {
 	bottom: 50px;
 	opacity: 1;
 	-webkit-transition: all 0.5s;
