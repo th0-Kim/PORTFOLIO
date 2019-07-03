@@ -19,4 +19,12 @@ $(window).scroll(function(e){
 	} else {
 		$topBtn.fadeOut();
 	};
+
+	// TOP BUTTON MOVE TO TOP
+	$topBtn.click( function() {
+		$( 'html, body' ).stop().animate( { scrollTop : 0 }, 400 );
+		return false;
+	} );
 });
+
+
