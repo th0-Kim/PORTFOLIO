@@ -1,11 +1,9 @@
 @import 'common';
 .contents{
 	min-height:800px;
-
 	.cardWrap{
 		width:1200px; 
 		margin:100px auto 50px;
-	
 		.card{
 			position:relative; 
 			display:block; 
@@ -18,11 +16,9 @@
 			border:5px solid #ddd; 
 			border-radius:10px; 
 			box-sizing:border-box;
-
 			&:nth-child(3n){
 				margin-right:0;
 			}
-		
 			.pubcardEx{
 				position:absolute; 
 				left:0; 
@@ -33,19 +29,16 @@
 				opacity:0; 
 				padding:40px 20px; 
 				background-color:rgba(255,255,255,0.9);
-				
 				& li{
 					display:block; 
 					color:#000; 
 					font-size:14px; 
 					line-height:20px;
-					
 					&.year{
 						padding-bottom:10px; 
 						font-weight:700; 
 						font-size:16px;
 					}
-
 					&.work {
 						margin-top:10px;
 					}
@@ -68,7 +61,6 @@
 				background-color:rgba(37,41,73,0.2);
 			}
 		}
-
 		& img{
 			display:block; 
 			width:100%; 
@@ -79,14 +71,12 @@
 @media screen and (max-width:1200px) {
 	.cardWrap{
 		width:80%;
-	
 		& .card{
 			position:relative;
 			width:30%; 
 			height:200px; 
 			min-height:auto; 
 			margin-right:5%;
-			
 			& img{
 				width:120%;
 				position:absolute;
@@ -98,18 +88,14 @@
 	}
 
 }
-
 @media screen and (max-width:1024px) {
 	.card{
 		width:47%; 
 		margin-right:5%;
-
 		&:nth-child(3n){margin-right:5%;}
 		&:nth-child(2n) {margin-right:0;}
 	}
-
 }
-
 @media screen and (max-width:768px){
 	body{min-width:700px;}
 }
