@@ -184,6 +184,7 @@ footer a {
 .contents {
   min-height: 800px;
   padding: 100px 0 50px;
+  background-color: #ffffff;
 }
 
 .contents .cardWrap {
