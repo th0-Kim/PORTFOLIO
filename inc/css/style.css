@@ -183,11 +183,12 @@ footer a {
 
 .contents {
   min-height: 800px;
+  padding: 100px 0 50px;
 }
 
 .contents .cardWrap {
   width: 1200px;
-  margin: 100px auto 50px;
+  margin: 0 auto;
 }
 
 .contents .cardWrap .card {

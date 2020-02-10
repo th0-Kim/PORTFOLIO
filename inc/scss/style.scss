@@ -1,9 +1,10 @@
 @import 'common';
 .contents{
 	min-height:800px;
+	padding:100px 0 50px;
 	.cardWrap{
 		width:1200px; 
-		margin:100px auto 50px;
+		margin:0 auto;
 		.card{
 			position:relative; 
 			display:block; 
