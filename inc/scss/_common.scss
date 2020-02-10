@@ -123,4 +123,9 @@ footer{
 	& a{
 		color:#fff;
 	}
+	& p {
+		& strong {
+			font-weight:500;
+		}
+	}
 } 

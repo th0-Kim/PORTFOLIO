@@ -181,6 +181,10 @@ footer a {
   color: #fff;
 }
 
+footer p strong {
+  font-weight: 500;
+}
+
 .contents {
   min-height: 800px;
   background-color: #ffffff;
