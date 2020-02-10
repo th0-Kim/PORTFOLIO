@@ -183,13 +183,13 @@ footer a {
 
 .contents {
   min-height: 800px;
-  padding: 100px 0 50px;
   background-color: #ffffff;
 }
 
 .contents .cardWrap {
   width: 1200px;
   margin: 0 auto;
+  padding: 100px 0 50px;
 }
 
 .contents .cardWrap .card {
@@ -262,44 +262,5 @@ footer a {
   display: block;
   width: 100%;
   height: auto;
-}
-
-@media screen and (max-width: 1200px) {
-  .cardWrap {
-    width: 80%;
-  }
-  .cardWrap .card {
-    position: relative;
-    width: 30%;
-    height: 200px;
-    min-height: auto;
-    margin-right: 5%;
-  }
-  .cardWrap .card img {
-    width: 120%;
-    position: absolute;
-    left: 50%;
-    z-index: 1;
-    margin-left: -60%;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .card {
-    width: 47%;
-    margin-right: 5%;
-  }
-  .card:nth-child(3n) {
-    margin-right: 5%;
-  }
-  .card:nth-child(2n) {
-    margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    min-width: 700px;
-  }
 }
 /*# sourceMappingURL=style.css.map */
