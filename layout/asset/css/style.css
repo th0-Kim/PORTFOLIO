@@ -1,0 +1,13 @@
+.inner {width:1024px; margin:0 auto;}
+
+#list {display:flex; flex-wrap:wrap; flex-direction:row; align-items:center; justify-content:space-between; box-sizing:border-box;}
+.listItem {position:relative; min-width:300px; margin-top:80px; box-sizing:border-box;}
+
+.listItem .itemTit {position:relative; z-index:10; }
+  .itemTit .title {display:block; padding:50px; text-align:center; font-size:1.2rem; font-weight:800; padding:70px 15px; background-color:#eaa; border-radius:10px; box-sizing:border-box;}
+  .itemTit .info {box-sizing:border-box;}
+  .itemTit .subTitle {display:block; font-size:1.1rem; color:blue;}
+  .itemTit .icoSkill {display:block; margin-top:8px;}
+
+.listItem .itemInfo {position:absolute; z-index:1; top:15px; right:-10px; left:15px; padding:190px 10px 10px; background-color:rgba(0,0,0,0.8); color:#ffffff; border-radius:10px;}
+  .itemInfo .btmArea {height:0; opacity:0; margin-top:30px; padding:0 10px;}
