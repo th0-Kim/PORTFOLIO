@@ -1,0 +1,22 @@
+body {height:100vh; margin:0;}
+// .section {width:100%;}
+
+.mainSvg {
+	position:fixed; top:0; left:0; z-index: 0; font-family:"Montserrat"; font-size:8em; font-weight:bold; text-transform:uppercase; transition: 1s font-size;
+	& rect {
+		fill: white;
+		mask:url(#mask);
+	}
+	& .rectBox {
+		fill: black;
+	}
+}
+.bg {position:fixed; top:0; left:0; background-image: linear-gradient(to left,#aee, #aee, #eaa, #eae); width:100%; height:100%;}
+
+@media screen and (max-width:1200px) {
+	.mainSvg {
+		font-size:4em;
+	}
+}
+.section {position:relative; z-index:2; vertical-align:middle; text-align:center; font-size:8em;}
+.section + .section {margin-top:50px;}
