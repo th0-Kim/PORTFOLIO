@@ -18,7 +18,7 @@ app = {
     mainSvg = '.mainSvg',
     text = 'text',
     scroll = 'scroll',
-    em = 'em',
+    em = 'rem',
     px = 'px',
     firstClass = 'firstBox';
     $Wrap = app.$body.find(Wrap);
@@ -41,26 +41,28 @@ app = {
         TweenMax.set($text, {y:0});
       } else {
         if( winY > windowOW ) {
-            TweenMax.to($mainSvg, 0, {opacity:0, zIndex:0});
+            TweenMax.to($mainSvg, .55, {opacity:0, zIndex:0, ease:Power3.easeOut});
             TweenMax.to($text, 0, {y:windowOW});
+            TweenMax.to($('.top'), .5, {opacity:1, delay:.3, ease:Power3.easeOut});
+            
         } else {
-          TweenMax.to($mainSvg, 0, {opacity:1, zIndex:100,fontSize: winY*3 + em});
+          TweenMax.to($mainSvg, .55, {opacity:1, zIndex:100,fontSize: winY*3 + em, ease:Power3.easeOut});
           TweenMax.to($text, 0, {y:winY});
+          TweenMax.to($('.top'), .5, {opacity:0, delay:.3, ease:Power3.easeOut});
         }
       }
 
       if( window.pageYOffset > $('.container').height() * 1.3 ) {
-        // TweenMax.to($bg, .2, {position:'absolute', opacity:0});
-        TweenMax.to($bg, .55, {y:'-450px', pacity:0});
+        var footerH = $('footer').height() + 200;
+        TweenMax.to($bg, .55, {y: -footerH + 'px', ease:Power3.easeOut});
       } else {
-        // TweenMax.to($bg, .2, {position:'fixed', opacity:1});
-        TweenMax.to($bg, .55, {y:'0', opacity:1});
+        TweenMax.to($bg, .55, {y:'0', ease:Power3.easeOut});
       }
     });
     
     let chText = document.querySelector('.mainSvg text');
     setTimeout(() => {
-      chText.innerHTML = "KIM SOYOUNG"
+      chText.innerHTML = "KIM SO YOUNG"
     }, 5000);
 
   },
@@ -83,6 +85,5 @@ app = {
 $(function(){
   app.$body = $("body");
   hasJqueryObject(app.$body.find(".wrap")) && app.init(".wrap");
-	hasJqueryObject(app.$body.find(".listItem")) && app.listInit();
-  
+  hasJqueryObject(app.$body.find(".listItem")) && app.listInit(".listItem");
 })
