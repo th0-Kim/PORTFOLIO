@@ -39,12 +39,15 @@ app = {
       if ( winY < 100 ) {
         TweenMax.set($mainSvg, {fontSize: 8 + em});
         TweenMax.set($text, {y:0});
+
+        if(window.outerWidth < 1200) {
+          TweenMax.set($mainSvg, {fontSize: 2 + em});
+        }
       } else {
         if( winY > windowOW ) {
             TweenMax.to($mainSvg, .55, {opacity:0, zIndex:0, ease:Power3.easeOut});
             TweenMax.to($text, 0, {y:windowOW});
             TweenMax.to($('.top'), .5, {opacity:1, delay:.3, ease:Power3.easeOut});
-            
         } else {
           TweenMax.to($mainSvg, .55, {opacity:1, zIndex:100,fontSize: winY*3 + em, ease:Power3.easeOut});
           TweenMax.to($text, 0, {y:winY});
