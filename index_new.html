@@ -451,6 +451,7 @@
             var browse = navigator.userAgent.toLowerCase(); 
             if( (navigator.appName == 'Netscape' && browse.indexOf('trident') != -1) || (browse.indexOf("msie") != -1)) {
                 $('#popup').show().siblings('.dim').show();
+                $('.wrap').css("cursor", "Default");
                 $('.layerpopup .btn').on("click", function(){
                     window.location.href = "https://th0-kim.github.io/PORTFOLIO/index.html";
                 })
@@ -467,7 +468,7 @@
             //     }
 
         };
-        
+
         document.body.addEventListener("mousemove", evt => {
             const mouseX = evt.clientX;
             const mouseY = evt.clientY;
