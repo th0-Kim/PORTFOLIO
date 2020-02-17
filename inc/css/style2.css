@@ -227,7 +227,7 @@ footer p strong {
 }
 
 .listItem.on .itemInfo {
-  border: 1px solid rgba(72, 127, 183, 0.9);
+  border: 1px solid white;
 }
 
 .itemTit {
@@ -245,7 +245,7 @@ footer p strong {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #ffffff;
-  border: 1px solid rgba(72, 127, 183, 0.3);
+  border: 1px solid rgba(72, 127, 183, 0.9);
 }
 
 .itemTit .title img {
