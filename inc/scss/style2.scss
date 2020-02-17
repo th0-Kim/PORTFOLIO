@@ -65,9 +65,9 @@ footer{
 .cursor {
 	position:fixed; top:0; left:0; z-index:999; display:block; width:50px; height:50px; margin:-30px 0 0 -35px; 
 	background: url("/inc/images/wheel_white.png") no-repeat center; background-size:100% auto; 
-	will-change:transform;user-select:none;pointer-events:none;
+	will-change:transform; user-select:none; pointer-events:none; transform:scale(0.9);
 	&.active {
-		width:80px; height:80px; border-radius:50%; background-color:rgba(72,127,183,0.8); background-image:none; transform:scale(0.5);
+		width:80px; height:80px; border-radius:50%; background-color:rgba(72,127,183,0.8); background-image:none; transform:scale(0.25);
 	}
 
 }
@@ -150,6 +150,9 @@ $bg-icoSkill: rgba(108, 194, 189, 0.8);
 .dim {display:none; position:fixed; top:0; left:0; z-index:101; width:100%; height:100%; background-color:rgba(0,0,0,0.7);}
 
 @media screen and (max-width:1200px) {
+	.wrap {cursor:auto;}
+	.cursor {display:none;}
+
 	.inner,
 	.mainTit {width:860px;}
 	.mainSvg {

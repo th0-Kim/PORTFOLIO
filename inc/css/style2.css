@@ -132,6 +132,8 @@ footer p strong {
       -ms-user-select: none;
           user-select: none;
   pointer-events: none;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .cursor.active {
@@ -140,8 +142,8 @@ footer p strong {
   border-radius: 50%;
   background-color: rgba(72, 127, 183, 0.8);
   background-image: none;
-  -webkit-transform: scale(0.5);
-          transform: scale(0.5);
+  -webkit-transform: scale(0.25);
+          transform: scale(0.25);
 }
 
 /* 본문 */
@@ -382,6 +384,12 @@ footer p strong {
 }
 
 @media screen and (max-width: 1200px) {
+  .wrap {
+    cursor: auto;
+  }
+  .cursor {
+    display: none;
+  }
   .inner,
   .mainTit {
     width: 860px;

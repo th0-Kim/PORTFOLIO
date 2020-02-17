@@ -49,11 +49,13 @@ app = {
             TweenMax.to($mainSvg, .55, {opacity:0, zIndex:0, ease:Power3.easeOut});
             TweenMax.to($text, 0, {y:windowOW});
             // TweenMax.to($('.cursor'), 0.5, {opacity:0, ease:Power3.easeOut}, '$mainSvg+=.2');
+            TweenMax.to($('.cursor'), 0.5, {scale:0.25, ease:Power3.easeOut}); 
             $('.wrap, .cursor').addClass('active');
         } else {
           TweenMax.to($mainSvg, .55, {opacity:1, zIndex:100,fontSize: winY*3 + em, ease:Power3.easeOut});
           TweenMax.to($text, 0, {y:winY});
           // TweenMax.to($('.cursor'), 0.5, {opacity:1});
+          TweenMax.to($('.cursor'), 0.5, {scale:0.9, ease:Power3.easeOut});
           $('.wrap, .cursor').removeClass('active');
         }
       }
@@ -87,7 +89,7 @@ app = {
         $(this).removeClass('on');
         TweenMax.set($(this).find('.btmArea'), {height:0, opacity:0});
         TweenMax.set($(this).find('.itemInfo'), {top:'15px', left:'15px', padding:'210px 10px 10px'});
-        TweenMax.to($('.cursor'), 0.5, {scale:0.5, ease:Power3.easeOut});
+        TweenMax.to($('.cursor'), 0.5, {scale:0.25, ease:Power3.easeOut});
       });
   }
 }
