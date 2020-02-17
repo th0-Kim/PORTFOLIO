@@ -241,7 +241,6 @@ footer p strong {
   width: 100%;
   height: 230px;
   text-align: center;
-  font-weight: 600;
   border-radius: 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -265,6 +264,7 @@ footer p strong {
   margin-top: 5px;
   font-size: 1.1rem;
   color: #333333;
+  font-weight: bold;
   text-decoration: none;
   /*text-shadow: 2px 2px 4px rgba(0,0,0,.8);*/
 }
@@ -279,7 +279,6 @@ footer p strong {
   padding: 0 5px 2px;
   border-radius: 3px;
   font-size: 0.8em;
-  font-weight: 600;
   /*background-color:$bg-icoSkill;*/
   color: #ffffff;
 }
@@ -321,6 +320,7 @@ footer p strong {
   opacity: 0;
   margin-top: 33px;
   padding: 0 10px;
+  font-weight: 600;
 }
 
 .itemInfo .btmArea .myWork span:after, .itemInfo .btmArea .program span:after {
