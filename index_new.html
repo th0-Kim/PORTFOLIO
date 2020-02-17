@@ -432,11 +432,29 @@
                 Editplus, Zeplin, GIT, SVN, FTP, Photoshop
             </p>
         </footer><!-- // FOOTER END -->
+        <!-- layerpopup -->
+        <div class="layerpopup" id="popup">
+            <p>이 페이지는 크롬버전에 최적화되어있습니다.<br> 이 전 포트폴리오로 이동합니다.</p>
+            <button class="btn" type="button">이동</button>
+        </div>
+        <div class="dim"></div>
+        <!-- //layerpopup -->
     </div>
     <script>
     </script>
     <script src="inc/js/vendor/jquery-2.1.3.min.js"></script>
     <script src="inc/js/vendor/TweenMax.min.js"></script>
     <script src="inc/js/index.js"></script>
+    <script>
+        window.onload = function(){
+            var browse = navigator.userAgent.toLowerCase(); 
+            if( (navigator.appName == 'Netscape' && browse.indexOf('trident') != -1) || (browse.indexOf("msie") != -1)) {
+                $('#popup').show().siblings('.dim').show();
+                $('.layerpopup .btn').on("click", function(){
+                    window.location.href = "../index.html";
+                })
+            }
+        };
+    </script>
 </body>
 </html>
