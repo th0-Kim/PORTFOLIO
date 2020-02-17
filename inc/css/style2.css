@@ -1,4 +1,33 @@
 @charset "UTF-8";
+/* Noto Sans */
+@font-face {
+  font-family: 'NotoSansCJK';
+  font-style: normal;
+  font-weight: 400;
+  src: url("../font/notokr-light.eot?#iefix") format("embedded-opentype"), url("../font/notokr-light.woff2") format("woff2"), url("../font/notokr-light.woff") format("woff"), url("../font/notokr-light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSansCJK';
+  font-style: normal;
+  font-weight: 500;
+  src: url("../font/notokr-regular.eot?#iefix") format("embedded-opentype"), url("../font/notokr-regular.woff2") format("woff2"), url("../font/notokr-regular.woff") format("woff"), url("../font/notokr-regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSansCJK';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../font/notokr-medium.eot?#iefix") format("embedded-opentype"), url("../font/notokr-medium.woff2") format("woff2"), url("../font/notokr-medium.woff") format("woff"), url("../font/notokr-medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'NotoSansCJK';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../font/notokr-bold.eot?#iefix") format("embedded-opentype"), url("../font/notokr-bold.woff2") format("woff2"), url("../font/notokr-bold.woff") format("woff"), url("../font/notokr-bold.ttf") format("truetype");
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +66,7 @@ body {
   position: relative;
   height: 100vh;
   margin: 0;
+  font-family: 'NotoSansCJK', sans-serif;
   font-size: 14px;
 }
 
