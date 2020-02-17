@@ -37,7 +37,7 @@ app = {
       var winY = window.scrollY,
           windowOW = window.outerWidth/3.5;
       if ( winY < 100 ) {
-        TweenMax.set($mainSvg, {fontSize: 7 + em});
+        TweenMax.set($mainSvg, {fontSize: 6 + em});
         TweenMax.set($text, {y:0});
 
         if(window.outerWidth < 1200) {
@@ -76,12 +76,14 @@ app = {
   },
   listEvent: function(){
       $(this.$item).on('mouseenter', function(){
-          TweenMax.to($(this).find('.btmArea'), .5, {height:'auto', opacity:1});
-          TweenMax.to($(this).find('.itemInfo'), .5, {top:'-15px', left:'-15px', padding:'280px 10px 10px'});
+        $(this).addClass('on');
+        TweenMax.to($(this).find('.btmArea'), .5, {height:'auto', opacity:1});
+        TweenMax.to($(this).find('.itemInfo'), .5, {top:'-15px', left:'-15px', padding:'280px 10px 10px'});
       }).on('mouseleave', function(){
-          TweenMax.set($(this).find('.btmArea'), {height:0, opacity:0});
-          TweenMax.set($(this).find('.itemInfo'), {top:'15px', left:'15px', padding:'210px 10px 10px'});
-      })
+        $(this).removeClass('on');
+        TweenMax.set($(this).find('.btmArea'), {height:0, opacity:0});
+        TweenMax.set($(this).find('.itemInfo'), {top:'15px', left:'15px', padding:'210px 10px 10px'});
+      });
   }
 }
   
