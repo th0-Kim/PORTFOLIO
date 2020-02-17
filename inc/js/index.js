@@ -48,13 +48,13 @@ app = {
         if( winY > windowOW ) { //svg 사라짐
             TweenMax.to($mainSvg, .55, {opacity:0, zIndex:0, ease:Power3.easeOut});
             TweenMax.to($text, 0, {y:windowOW});
-            TweenMax.to($('.cursor'), 0.5, {opacity:0, ease:Power3.easeOut}, '$mainSvg+=.2');
-            $('.wrap').addClass('active');
+            // TweenMax.to($('.cursor'), 0.5, {opacity:0, ease:Power3.easeOut}, '$mainSvg+=.2');
+            $('.wrap, .cursor').addClass('active');
         } else {
           TweenMax.to($mainSvg, .55, {opacity:1, zIndex:100,fontSize: winY*3 + em, ease:Power3.easeOut});
           TweenMax.to($text, 0, {y:winY});
-          TweenMax.to($('.cursor'), 0.5, {opacity:1});
-          $('.wrap').removeClass('active');
+          // TweenMax.to($('.cursor'), 0.5, {opacity:1});
+          $('.wrap, .cursor').removeClass('active');
         }
       }
 
@@ -82,10 +82,12 @@ app = {
         $(this).addClass('on');
         TweenMax.to($(this).find('.btmArea'), .5, {height:'auto', opacity:1});
         TweenMax.to($(this).find('.itemInfo'), .5, {top:'-15px', left:'-15px', padding:'280px 10px 10px'});
+        TweenMax.to($('.cursor'), 0.5, {scale:0.8, ease:Power3.easeOut});
       }).on('mouseleave', function(){
         $(this).removeClass('on');
         TweenMax.set($(this).find('.btmArea'), {height:0, opacity:0});
         TweenMax.set($(this).find('.itemInfo'), {top:'15px', left:'15px', padding:'210px 10px 10px'});
+        TweenMax.to($('.cursor'), 0.5, {scale:0.5, ease:Power3.easeOut});
       });
   }
 }
