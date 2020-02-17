@@ -66,10 +66,10 @@ app = {
       }
     });
     
-    // let chText = document.querySelector('.mainSvg text');
-    // setTimeout(() => {
-    //   chText.innerHTML = "KIM SO YOUNG"
-    // }, 5000);
+    let chText = document.querySelector('.mainSvg text');
+    setTimeout(() => {
+      chText.innerHTML = "KIM SO YOUNG"
+    }, 5000);
 
   },
   listInit: function(){
