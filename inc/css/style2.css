@@ -143,8 +143,8 @@ footer p strong {
 .container {
   padding-top: 100px;
   margin-bottom: 650px;
-  background-image: none;
-  background-color: #f1ece3;
+  background-image: -webkit-gradient(linear, right top, left top, from(#aee), color-stop(#eaa), to(#eae));
+  background-image: linear-gradient(to left, #aee, #eaa, #eae);
 }
 
 .mainTit {
@@ -187,8 +187,8 @@ footer p strong {
   top: 0;
   left: 0;
   z-index: 1;
-  background-image: none;
-  background-color: #f1ece3;
+  background-image: -webkit-gradient(linear, right top, left top, from(#aee), color-stop(#eaa), to(#eae));
+  background-image: linear-gradient(to left, #aee, #eaa, #eae);
   width: 100%;
   height: 100%;
 }
