@@ -91,6 +91,13 @@ app = {
         TweenMax.set($(this).find('.itemInfo'), {top:'15px', left:'15px', padding:'210px 10px 10px'});
         TweenMax.to($('.cursor'), 0.5, {scale:0.25, ease:Power3.easeOut});
       });
+  },
+  cursror: function(mouse){
+    document.body.addEventListener("mousemove", evt => {
+        const mouseX = evt.clientX;
+        const mouseY = evt.clientY;
+        TweenMax.set($(mouse), {x: mouseX, y: mouseY});
+    })
   }
 }
   
@@ -98,4 +105,6 @@ $(function(){
   app.$body = $("body");
   hasJqueryObject(app.$body.find(".wrap")) && app.init(".wrap");
   hasJqueryObject(app.$body.find(".listItem")) && app.listInit(".listItem");
+  hasJqueryObject(app.$body.find(".cursor")) && app.cursror(".cursor");
+  
 })
