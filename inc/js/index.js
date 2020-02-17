@@ -40,18 +40,21 @@ app = {
         TweenMax.set($mainSvg, {fontSize: 6 + em});
         TweenMax.set($text, {y:0});
 
+        // 1200이하 디바이스용
         if(window.outerWidth < 1200) {
           TweenMax.set($mainSvg, {fontSize: 2 + em});
         }
       } else {
-        if( winY > windowOW ) {
+        if( winY > windowOW ) { //svg 사라짐
             TweenMax.to($mainSvg, .55, {opacity:0, zIndex:0, ease:Power3.easeOut});
             TweenMax.to($text, 0, {y:windowOW});
-            TweenMax.to($('.top'), .5, {opacity:1, delay:.3, ease:Power3.easeOut});
+            TweenMax.to($('.cursor'), 0.5, {opacity:0, ease:Power3.easeOut}, '$mainSvg+=.2');
+            $('.wrap').addClass('active');
         } else {
           TweenMax.to($mainSvg, .55, {opacity:1, zIndex:100,fontSize: winY*3 + em, ease:Power3.easeOut});
           TweenMax.to($text, 0, {y:winY});
-          TweenMax.to($('.top'), .5, {opacity:0, delay:.3, ease:Power3.easeOut});
+          TweenMax.to($('.cursor'), 0.5, {opacity:1});
+          $('.wrap').removeClass('active');
         }
       }
 
@@ -63,10 +66,10 @@ app = {
       }
     });
     
-    let chText = document.querySelector('.mainSvg text');
-    setTimeout(() => {
-      chText.innerHTML = "KIM SO YOUNG"
-    }, 5000);
+    // let chText = document.querySelector('.mainSvg text');
+    // setTimeout(() => {
+    //   chText.innerHTML = "KIM SO YOUNG"
+    // }, 5000);
 
   },
   listInit: function(){
