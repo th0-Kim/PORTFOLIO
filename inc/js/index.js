@@ -37,7 +37,7 @@ app = {
       var winY = window.scrollY,
           windowOW = window.outerWidth/3.5;
       if ( winY < 100 ) {
-        TweenMax.set($mainSvg, {fontSize: 8 + em});
+        TweenMax.set($mainSvg, {fontSize: 7 + em});
         TweenMax.set($text, {y:0});
 
         if(window.outerWidth < 1200) {

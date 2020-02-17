@@ -61,7 +61,7 @@ footer{
 .mainTit {position:relative; z-index:1; width:1280px; margin:0 auto; padding:0 35px 0 20px; font-size:3em; color:rgba(0, 31, 58, 0.8); box-sizing:border-box;}
 
 .mainSvg {
-	position:fixed; top:0; left:0; z-index:100; font-size:8rem; font-weight:bold; text-transform:uppercase; transition:1s font-size; text-decoration: underline;
+	position:fixed; top:0; left:0; z-index:100; font-size:7rem; font-weight:bold; text-transform:uppercase; transition:1s font-size; text-decoration: underline;
 	& rect {
 		fill: white;
 		mask:url(#mask);
