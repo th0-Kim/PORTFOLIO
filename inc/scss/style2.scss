@@ -116,12 +116,12 @@ $bg-icoSkill: rgba(108, 194, 189, 0.8);
 	& .subTitle {display:block; margin-top:5px; font-size:1.1rem; color:$font-color; text-decoration:none; /*text-shadow: 2px 2px 4px rgba(0,0,0,.8);*/}
 	& .icoSkill {
 		display:block; margin-top:8px;
-		& span {display:inline-block; padding:0 5px 2px; border-radius:3px; font-size:0.8em; font-weight:600; background-color:$bg-icoSkill; color:#ffffff;}
-		// & .icoHtml {background-color:#37cd90;}
-		// & .icoCSS3 {background-color:#e84b80;}
-		// & .icoSass {background-color:#487fb7;}
-		// & .icoJS {background-color:#fbeb34;}
-		// & .icoEtc {background-color:#8b7db7;}
+		& span {display:inline-block; padding:0 5px 2px; border-radius:3px; font-size:0.8em; font-weight:600; /*background-color:$bg-icoSkill;*/ color:#ffffff;}
+		& .icoHtml {background-color:#37cd90;}
+		& .icoCSS3 {background-color:#e84b80;}
+		& .icoSass {background-color:#487fb7;}
+		& .icoJS {background-color:#fbeb34;}
+		& .icoEtc {background-color:#8b7db7;}
 		    
 		    
         
