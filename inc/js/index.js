@@ -103,7 +103,7 @@ app = {
   
 $(function(){
   app.$body = $("body");
-  hasJqueryObject(app.$body.find(".wrap")) && app.init(".wrap");
+  // hasJqueryObject(app.$body.find(".wrap")) && app.init(".wrap");
   hasJqueryObject(app.$body.find(".listItem")) && app.listInit(".listItem");
   hasJqueryObject(app.$body.find(".cursor")) && app.cursror(".cursor");
   

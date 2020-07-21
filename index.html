@@ -24,20 +24,6 @@
 <body>
     <span class="cursor"></span>
     <div class="wrap">
-        <header class="header">
-            <div class="bg"></div>
-            <h1 class="blind">웹퍼블리셔 김소영의 포트폴리오</h1>
-            <svg class="mainSvg" height="100%" width="100%">
-                <defs>
-                    <mask id="mask" x="0" y="0" height="100%" width="100%">
-                        <rect x="0" y="0" height="100%" width="100%" />
-                        <rect x="0" y="0" height="100%" width="100%" />
-                        <text x="50%" y="50%" fill="red" text-anchor="middle">WEB PUBLISHER.</text>
-                    </mask>
-                </defs>
-                <rect class="rectBox" x="0" y="0" height="100%" width="100%" />
-            </svg><!-- // MAIN SVG -->
-        </header><!-- // HEADER END -->
         <section class="container" id="top">
             <h2 class="mainTit">PORTFOLIO</h2>
             <acticle id="list" class="inner">
@@ -382,17 +368,6 @@
                 </div><!-- //할렐루야교회 -->
             </acticle><!-- // CONTENTS END -->
         </section>
-        <div class="mobFooter">
-            KIM SO YOUNG · WEB Pulisher<br />
-            010 - 3287 - 3001<br/>
-            ksyy3001@naver.com<br/><br/>
-            <p>
-                <strong>[ WHAT I DO ]</strong><br/>
-                HTML5, CSS3, SASS, jQuery, SwiperAPI, TweenMax, 
-                Eclipse, VSCODE, SublimeText2, cafe24, eXbuilder6, 
-                Editplus, Zeplin, GIT, SVN, CVS, FTP, Photoshop
-            </p>
-        </div>
         <footer>
             <a href="https://th0-kim.github.io/PORTFOLIO/">PORTFOLIO</a> · WEB Pulisher<br />
             010 - 3287 - 3001 · ksyy3001@naver.com<br/><br/>
@@ -403,37 +378,20 @@
                 Editplus, Zeplin, GIT, SVN, CVS, FTP, Photoshop
             </p>
         </footer><!-- // FOOTER END -->
-        <!-- layerpopup -->
-        <div class="layerpopup" id="popup">
-            <p>이 페이지는 크롬버전에 최적화 되어있습니다.<br> 이전 버젼으로 이동합니다.</p>
-            <button class="btn" type="button">이동</button>
-        </div>
-        <div class="dim"></div>
-        <!-- //layerpopup -->
+        <!-- <div class="mobFooter">
+            KIM SO YOUNG · WEB Pulisher<br />
+            010 - 3287 - 3001<br/>
+            ksyy3001@naver.com<br/><br/>
+            <p>
+                <strong>[ WHAT I DO ]</strong><br/>
+                HTML5, CSS3, SASS, jQuery, SwiperAPI, TweenMax, 
+                Eclipse, VSCODE, SublimeText2, cafe24, eXbuilder6, 
+                Editplus, Zeplin, GIT, SVN, CVS, FTP, Photoshop
+            </p>
+        </div> -->
     </div>
     <script src="inc/js/vendor/jquery-2.1.3.min.js"></script>
     <script src="inc/js/vendor/TweenMax.min.js"></script>
     <script src="inc/js/index.js"></script>
-    <script>
-        window.onload = function(){
-            var browse = navigator.userAgent.toLowerCase(); 
-            if( (navigator.appName == 'Netscape' && browse.indexOf('trident') != -1) || (browse.indexOf("msie") != -1)) {
-                $('#popup').show().siblings('.dim').show();
-                $('.wrap').css("cursor", "Default");
-                $('.layerpopup .btn').on("click", function(){
-                    window.location.href = "https://th0-kim.github.io/PORTFOLIO/index_2019.html";
-                })
-            }
-            // 다른 브라우져 셀랙트
-            // if( agent.indexOf("chrome") != -1 ){
-            //  alert("CHROME");
-            //     } else if ( agent.indexOf("safari") != -1 ){
-            //         alert("SAFARI");
-            //     } else if ( agent.indexOf("firefox") != -1 ){
-            //         alert("FIREFOX");
-            //     }
-
-        };
-    </script>
 </body>
 </html>

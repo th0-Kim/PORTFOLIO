@@ -88,13 +88,8 @@ body * {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  z-index: 0;
-  width: 100%;
-  height: 350px;
-  padding-top: 200px;
+  /*position:fixed; left:0; bottom:0; z-index:0; width:100%; height:350px; padding-top:200px; 2020-07-21*/
+  padding: 50px 0;
   background-color: rgba(0, 31, 58, 0.8);
   color: #fff;
   text-align: center;
@@ -109,10 +104,6 @@ footer p strong {
   display: inline-block;
   margin-bottom: 10px;
   font-weight: 500;
-}
-
-.mobFooter {
-  display: none;
 }
 
 .cursor {
@@ -149,7 +140,8 @@ footer p strong {
 /* 본문 */
 .container {
   padding-top: 100px;
-  margin-bottom: 650px;
+  padding-bottom: 50px;
+  /*margin-bottom:650px; 2020-07-21*/
   background-image: -webkit-gradient(linear, right top, left top, from(#aee), color-stop(#eaa), to(#eae));
   background-image: linear-gradient(to left, #aee, #eaa, #eae);
 }
@@ -273,6 +265,10 @@ footer p strong {
 
 .itemTit .subTitle:hover {
   color: #37cd90;
+}
+
+.itemTit .subTitle[href*="javascript"] {
+  cursor: context-menu;
 }
 
 .itemTit .subTitle:not([href*="javascript:void(0);"]):after {
@@ -414,9 +410,6 @@ footer p strong {
 }
 
 @media screen and (max-width: 840px) {
-  footer {
-    display: none;
-  }
   .inner,
   .mainTit {
     width: 480px;
@@ -431,16 +424,7 @@ footer p strong {
     margin-top: 30px;
   }
   .container {
-    margin-bottom: 100px;
-  }
-  .mobFooter {
-    display: block;
-    position: relative;
-    z-index: 1;
-    padding: 40px 20px;
-    font-size: 1.3em;
-    color: #555;
-    background-color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 100px;
   }
 }
 
