@@ -275,6 +275,16 @@ footer p strong {
   color: #37cd90;
 }
 
+.itemTit .subTitle:not([href*="javascript:void(0);"]):after {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-left: 5px;
+  background: url(../images/icon_link.png) no-repeat center;
+  background-size: 100% auto;
+}
+
 .itemTit .icoSkill {
   display: block;
   margin-top: 8px;
