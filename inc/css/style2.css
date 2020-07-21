@@ -74,11 +74,6 @@ body * {
   line-height: calc( 1em + 8px);
 }
 
-.wrap {
-  mix-blend-mode: screen;
-  cursor: none;
-}
-
 .inner {
   width: 1280px;
   margin: 0 auto;
@@ -104,37 +99,6 @@ footer p strong {
   display: inline-block;
   margin-bottom: 10px;
   font-weight: 500;
-}
-
-.cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  display: block;
-  width: 50px;
-  height: 50px;
-  margin: -30px 0 0 -35px;
-  background: url("/inc/images/wheel_white.png") no-repeat center;
-  background-size: 100% auto;
-  will-change: transform;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  pointer-events: none;
-  -webkit-transform: scale(0.9);
-          transform: scale(0.9);
-}
-
-.cursor.active {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: rgba(72, 127, 183, 0.8);
-  background-image: none;
-  -webkit-transform: scale(0.25);
-          transform: scale(0.25);
 }
 
 /* 본문 */
@@ -391,12 +355,6 @@ footer p strong {
 }
 
 @media screen and (max-width: 1200px) {
-  .wrap {
-    cursor: auto;
-  }
-  .cursor {
-    display: none;
-  }
   .inner,
   .mainTit {
     width: 860px;

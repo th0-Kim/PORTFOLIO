@@ -46,8 +46,8 @@ a{text-decoration:none; color:#444;}
 body {position:relative; height:100vh; margin:0; font-family:'NotoSansCJK', sans-serif; font-size:14px;}
 body * {line-height:calc( 1em + 8px);}
 .wrap {
-	mix-blend-mode:screen; cursor:none;
-	// &.active {cursor:auto;}
+	// mix-blend-mode:screen; cursor:none; 2020-07-21
+	// &.active {cursor:auto;} 2020-07-21
 }
 
 .inner {width:1280px; margin:0 auto; padding:0 35px 0 20px; box-sizing:border-box;}
@@ -61,16 +61,16 @@ footer{
 	}
 }
 // .mobFooter {display:none;} 2020-07-21
+// 2020-07-21 삭제
+// .cursor {
+// 	position:fixed; top:0; left:0; z-index:999; display:block; width:50px; height:50px; margin:-30px 0 0 -35px; 
+// 	background: url("/inc/images/wheel_white.png") no-repeat center; background-size:100% auto; 
+// 	will-change:transform; user-select:none; pointer-events:none; transform:scale(0.9);
+// 	&.active {
+// 		width:80px; height:80px; border-radius:50%; background-color:rgba(72,127,183,0.8); background-image:none; transform:scale(0.25);
+// 	}
 
-.cursor {
-	position:fixed; top:0; left:0; z-index:999; display:block; width:50px; height:50px; margin:-30px 0 0 -35px; 
-	background: url("/inc/images/wheel_white.png") no-repeat center; background-size:100% auto; 
-	will-change:transform; user-select:none; pointer-events:none; transform:scale(0.9);
-	&.active {
-		width:80px; height:80px; border-radius:50%; background-color:rgba(72,127,183,0.8); background-image:none; transform:scale(0.25);
-	}
-
-}
+// }
 
 $bg-image : linear-gradient(to left, #aee, #eaa, #eae);
 $font-color: #ffffff;
@@ -152,8 +152,8 @@ $bg-icoSkill: rgba(108, 194, 189, 0.8);
 .dim {display:none; position:fixed; top:0; left:0; z-index:101; width:100%; height:100%; background-color:rgba(0,0,0,0.7);}
 
 @media screen and (max-width:1200px) {
-	.wrap {cursor:auto;}
-	.cursor {display:none;}
+	// .wrap {cursor:auto;} 2020-07-21
+	// .cursor {display:none;} 2020-07-21
 
 	.inner,
 	.mainTit {width:860px;}
