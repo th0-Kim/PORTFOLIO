@@ -45,10 +45,10 @@ a{text-decoration:none; color:#444;}
 .clearfix{clear:both; overflow:hidden;}
 body {position:relative; height:100vh; margin:0; font-family:'NotoSansCJK', sans-serif; font-size:14px;}
 body * {line-height:calc( 1em + 8px);}
-.wrap {
+// .wrap {
 	// mix-blend-mode:screen; cursor:none; 2020-07-21
 	// &.active {cursor:auto;} 2020-07-21
-}
+// }
 
 .inner {width:1280px; margin:0 auto; padding:0 35px 0 20px; box-sizing:border-box;}
 footer{
