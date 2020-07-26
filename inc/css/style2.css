@@ -381,15 +381,23 @@ footer p strong {
   .listItem:nth-child(1) {
     margin-top: 30px;
   }
+  .container {
+    padding-top: 70px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .inner,
   .mainTit {
     width: 100%;
+    min-width: 320px;
   }
   .inner {
     padding: 0 20px;
+  }
+  .container,
+  footer {
+    min-width: 320px;
   }
 }
 /*# sourceMappingURL=style2.css.map */
