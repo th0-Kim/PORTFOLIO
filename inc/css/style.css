@@ -403,9 +403,6 @@ footer p strong {
 }
 
 @media screen and (max-width: 840px) {
-  body {
-    font-size: 12px;
-  }
   .inner, .mainTit {
     max-width: 480px;
   }
