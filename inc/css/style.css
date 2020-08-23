@@ -191,25 +191,30 @@ body * {
 }
 
 .itemTit .subTitle {
+  overflow: hidden;
   display: block;
+  width: 80%;
   margin-top: 5px;
+  padding-left: 20px;
   font-size: 1.1rem;
   color: #ffffff;
   font-weight: 600;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
   text-decoration: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .itemTit .subTitle[href*="javascript"] {
   cursor: context-menu;
 }
 
-.itemTit .subTitle:not([href*="javascript:void(0);"]):after {
+.itemTit .subTitle:not([href*="javascript:void(0);"]):before {
   content: '';
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin-left: 5px;
+  margin: -3px 5px 0 0;
   background: url(../images/icon_link.png) no-repeat center;
   background-size: 100% auto;
   vertical-align: middle;
@@ -237,7 +242,7 @@ body * {
 }
 
 .itemTit .icoSkill .icoSass {
-  background-color: #487fb7;
+  background-color: #f98500;
 }
 
 .itemTit .icoSkill .icoJS {
@@ -245,7 +250,7 @@ body * {
 }
 
 .itemTit .icoSkill .icoEtc {
-  background-color: #8b7db7;
+  background-color: #c47ee4;
 }
 
 .itemInfo {
@@ -398,6 +403,9 @@ footer p strong {
 }
 
 @media screen and (max-width: 840px) {
+  body {
+    font-size: 12px;
+  }
   .inner, .mainTit {
     max-width: 480px;
   }
@@ -412,6 +420,7 @@ footer p strong {
     display: block;
   }
   .listItem {
+    width: 100%;
     margin: 100px auto 0;
   }
   .listItem:nth-child(1) {

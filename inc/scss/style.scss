@@ -104,18 +104,18 @@ $list-dim : rgba(6, 84, 152, 0.72);
 	}
 	& .info {box-sizing:border-box;}
 	& .subTitle {
-		display:block;margin-top:5px;font-size:1.1rem;color:$fc-fff;font-weight:600;text-shadow: 2px 2px 4px rgba(0,0,0,.8);text-decoration:none;
+		overflow:hidden;display:block;width:80%;margin-top:5px;padding-left:20px;font-size:1.1rem;color:$fc-fff;font-weight:600;text-shadow: 2px 2px 4px rgba(0,0,0,.8);text-decoration:none;white-space:nowrap;text-overflow: ellipsis;
 		&[href*="javascript"] {cursor:context-menu;}
-		&:not([href*="javascript:void(0);"]):after {content:'';display:inline-block;width:20px;height:20px;margin-left:5px;background:url(../images/icon_link.png) no-repeat center;background-size:100% auto;vertical-align:middle;}
+		&:not([href*="javascript:void(0);"]):before {content:'';display:inline-block;width:20px;height:20px;margin:-3px 5px 0 0;background:url(../images/icon_link.png) no-repeat center;background-size:100% auto;vertical-align:middle;}
 	}
 	& .icoSkill {
 		display:block;margin-top:8px;
 		& span {display:inline-block;padding:0 5px 2px;border-radius:3px;font-size:0.8em;color:#ffffff;}
 		& .icoHtml {background-color:#37cd90;}
 		& .icoCSS3 {background-color:#e84b80;}
-		& .icoSass {background-color:#487fb7;}
+		& .icoSass {background-color:#f98500;}
 		& .icoJS {background-color:#fbeb34;}
-		& .icoEtc {background-color:#8b7db7;}
+		& .icoEtc {background-color:#c47ee4;}
 	}
 }
 .itemInfo {
@@ -170,6 +170,7 @@ footer{
 }
 
 @media screen and (max-width:840px) {
+	body {font-size:12px;}
 	.inner, .mainTit {max-width:480px;}
 	#career {max-width:100%;padding:0 20px;}
 	.mainTit {
@@ -177,6 +178,7 @@ footer{
 		& .name {display:block;}
 	}
 	.listItem {
+		width:100%;
 		margin:100px auto 0;
 		&:nth-child(1) {margin-top:60px;}
 	}
