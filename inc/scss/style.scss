@@ -104,9 +104,10 @@ $list-dim : rgba(6, 84, 152, 0.72);
 	}
 	& .info {box-sizing:border-box;}
 	& .subTitle {
-		overflow:hidden;display:block;width:80%;margin-top:5px;padding-left:20px;font-size:1.1rem;color:$fc-fff;font-weight:600;text-shadow: 2px 2px 4px rgba(0,0,0,.8);text-decoration:none;white-space:nowrap;text-overflow: ellipsis;
+		overflow:hidden;display:block;width:80%;margin-top:5px;font-size:1.1rem;color:$fc-fff;font-weight:600;text-shadow: 2px 2px 4px rgba(0,0,0,.8);text-decoration:none;white-space:nowrap;text-overflow: ellipsis;
 		&[href*="javascript"] {cursor:context-menu;}
-		&:not([href*="javascript:void(0);"]):before {content:'';display:inline-block;width:20px;height:20px;margin:-3px 5px 0 0;background:url(../images/icon_link.png) no-repeat center;background-size:100% auto;vertical-align:middle;}
+		&:before {content:'';display:inline-block;width:20px;height:20px;margin:-3px 5px 0 0;background:url('../images/icon_link_no.png') no-repeat center;background-size:100% auto;vertical-align:middle;}
+		&:not([href*="javascript:void(0);"]):before {background-image:url('../images/icon_link.png');}
 	}
 	& .icoSkill {
 		display:block;margin-top:8px;
@@ -179,7 +180,7 @@ footer{
 	.listItem {
 		width:100%;
 		margin:100px auto 0;
-		&:nth-child(1) {margin-top:60px;}
+		&:nth-child(1) {margin-top:50px;}
 	}
 	.container {padding-top:70px;}
 	.careList > li > * {display:block;}
@@ -196,7 +197,7 @@ footer{
 	/* top 버튼 */
 	.top {right:0;bottom:0;width:100%;height:40px;line-height:40px;border-radius:0;}
 	/* 모바일 문구 */
-	.moSub {display:block;padding:35px 10px 0;text-align:center;}
+	.moSub {display:block;padding:25px 10px 0;text-align:center;font-size:16px;}
 }
 
 //min

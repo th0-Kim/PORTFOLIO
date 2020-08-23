@@ -195,7 +195,6 @@ body * {
   display: block;
   width: 80%;
   margin-top: 5px;
-  padding-left: 20px;
   font-size: 1.1rem;
   color: #ffffff;
   font-weight: 600;
@@ -209,15 +208,19 @@ body * {
   cursor: context-menu;
 }
 
-.itemTit .subTitle:not([href*="javascript:void(0);"]):before {
+.itemTit .subTitle:before {
   content: '';
   display: inline-block;
   width: 20px;
   height: 20px;
   margin: -3px 5px 0 0;
-  background: url(../images/icon_link.png) no-repeat center;
+  background: url("../images/icon_link_no.png") no-repeat center;
   background-size: 100% auto;
   vertical-align: middle;
+}
+
+.itemTit .subTitle:not([href*="javascript:void(0);"]):before {
+  background-image: url("../images/icon_link.png");
 }
 
 .itemTit .icoSkill {
@@ -421,7 +424,7 @@ footer p strong {
     margin: 100px auto 0;
   }
   .listItem:nth-child(1) {
-    margin-top: 60px;
+    margin-top: 50px;
   }
   .container {
     padding-top: 70px;
@@ -481,8 +484,9 @@ footer p strong {
   /* 모바일 문구 */
   .moSub {
     display: block;
-    padding: 35px 10px 0;
+    padding: 25px 10px 0;
     text-align: center;
+    font-size: 16px;
   }
 }
 
