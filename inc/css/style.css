@@ -429,6 +429,12 @@ footer p strong {
   .container {
     padding-top: 70px;
   }
+  .careerWrap {
+    margin-top: 80px;
+  }
+  .careerWrap .mainTit {
+    font-size: 2.2em;
+  }
   .careList > li > * {
     display: block;
   }
