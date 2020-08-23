@@ -1,0 +1,270 @@
+@charset "UTF-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+body, .textareaWrap {
+  font-family: 'nanumgothic', '나눔고딕', sans-serif;
+}
+
+.blind, caption {
+  font-size: 0;
+  position: absolute;
+  top: -999999px;
+  visibility: hidden;
+}
+
+::-moz-selection {
+  background-color: rgba(24, 190, 176, 0.7);
+}
+
+::selection {
+  background-color: rgba(24, 190, 176, 0.7);
+}
+
+.clearfix {
+  clear: both;
+  overflow: hidden;
+}
+
+#wrap {
+  min-width: 1200px;
+}
+
+.header, .contents {
+  position: relative;
+  z-index: 1;
+  background-color: #ffffff;
+}
+
+.contents {
+  margin-bottom: 490px;
+}
+
+.header {
+  background-color: #18beb0;
+  opacity: 0.5;
+}
+
+.header:hover {
+  opacity: 0.8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header.on {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  opacity: 0.8;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header.on .gnb a {
+  line-height: 50px;
+}
+
+.header .gnb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.header .gnb a {
+  display: block;
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: auto;
+          flex: auto;
+  line-height: 80px;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  /* &.middle{border-left:1px solid #fff; border-right:1px solid #fff;} */
+}
+
+.header .gnb a.MyName:after {
+  content: 'KIM . SO . YOUNG';
+}
+
+.header .gnb a.MyName:hover {
+  font-weight: bold;
+  color: #1b10ad;
+  opacity: 1;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: default;
+}
+
+.header .gnb a.MyName:hover:after {
+  content: '010 . 3287 . 3001';
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    width: 1px;
+  }
+  30% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes arrow {
+  0% {
+    width: 1px;
+  }
+  30% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.top {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  font-size: 1em;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: center;
+  color: #fff;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  padding: 200px 0;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  line-height: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer p strong {
+  font-weight: 500;
+}
+
+.contents {
+  min-height: 800px;
+  background-color: #ffffff;
+}
+
+.contents .cardWrap {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 0 50px;
+}
+
+.contents .cardWrap .card {
+  position: relative;
+  display: block;
+  width: 370px;
+  float: left;
+  overflow: hidden;
+  margin-right: 43px;
+  margin-bottom: 70px;
+  min-height: 251px;
+  border: 5px solid #ddd;
+  border-radius: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.contents .cardWrap .card:nth-child(3n) {
+  margin-right: 0;
+}
+
+.contents .cardWrap .card .pubcardEx {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 150px;
+  z-index: 20;
+  height: 100%;
+  opacity: 0;
+  padding: 40px 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.contents .cardWrap .card .pubcardEx li {
+  display: block;
+  color: #000;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.contents .cardWrap .card .pubcardEx li.year {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.contents .cardWrap .card .pubcardEx li.work {
+  margin-top: 10px;
+}
+
+.contents .cardWrap .card:hover .pubcardEx {
+  top: 0;
+  opacity: 1;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.contents .cardWrap .card.wid .card:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 41, 73, 0.2);
+}
+
+.contents .cardWrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/*# sourceMappingURL=style_2019.css.map */
