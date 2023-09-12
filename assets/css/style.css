@@ -170,7 +170,7 @@ footer strong {
   position: relative;
   z-index: 10;
 }
-.item_title .title {
+.item_title .thumb_box {
   overflow: hidden;
   display: block;
   width: 100%;
@@ -180,7 +180,7 @@ footer strong {
   border: 1px solid rgba(0, 149, 255, 0.49);
   text-align: center;
 }
-.item_title .title img {
+.item_title .thumb_box img {
   display: block;
   width: 100%;
   height: auto;
@@ -190,6 +190,7 @@ footer strong {
   display: block;
   width: 100%;
   margin-top: 0.5rem;
+  margin-bottom: 1rem;
   padding-left: 2.4rem;
   text-indent: -2.4rem;
   font-size: 1.6rem;
@@ -214,12 +215,27 @@ footer strong {
   background-image: url("../images/icon_link.png");
 }
 .item_title .skill_label {
-  display: block;
-  margin-top: 0.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -0.2rem;
 }
 .item_title .skill_label span {
-  display: inline-block;
+  display: block;
   padding: 0 0.5rem 0.2rem;
+  margin: 0.2rem;
   border-radius: 3px;
   font-size: 1.4rem;
   font-weight: 500;
