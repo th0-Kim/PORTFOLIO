@@ -7,16 +7,14 @@
  * 1) LIST EVENT - listInit, listEvent
  */
 
-const appBody = document.body;
-const list_item = '.list_item';
-const listTit = '.item_title';
-const listInfo = '.item_back';
-const listThumb = '.thumb_box';
+const _appBody = document.body;
+const _listItem = '.list_item';
+const _listInfo = '.item_back';
 const ACTIVE_CLASS = 'on';
 
 let app = {
   listInit: function () {
-    this.thisitem = appBody.querySelectorAll(list_item);
+    this.thisitem = _appBody.querySelectorAll(_listItem);
     app.init();
   },
   init: function () {
@@ -54,12 +52,12 @@ let app = {
   },
   reset: function (e) {
     e.classList.remove(ACTIVE_CLASS);
-    e.querySelector(listInfo).style.height = '';
+    e.querySelector(_listInfo).style.height = '';
   },
   set: function (e) {
     e.classList.add(ACTIVE_CLASS);
-    const itemHeight = e.querySelector(listTit).clientHeight;
-    e.querySelector(listInfo).style.height = itemHeight + 80 + 'px';
+    const itemHeight = e.clientHeight;
+    e.querySelector(_listInfo).style.height = itemHeight + 'px';
   },
 };
 
@@ -68,7 +66,7 @@ function hasJqueryObject(elem) {
 }
 
 // 조건이 맞으면 Go!
-hasJqueryObject(appBody.querySelector(list_item)) && app.listInit(list_item);
+hasJqueryObject(_appBody.querySelector(_listItem)) && app.listInit(_listItem);
 
 // go to top!
 const topButton = document.querySelector('.top');
