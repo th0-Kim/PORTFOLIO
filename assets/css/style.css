@@ -421,9 +421,6 @@ footer strong {
   .career_wrap .main_title {
     font-size: 2.2em;
   }
-  .career_list > li {
-    grid-auto-rows: auto;
-  }
   .li_title {
     position: relative;
     -ms-flex-negative: 0;
@@ -489,7 +486,16 @@ footer strong {
   footer {
     min-width: 32rem;
   }
+  .career_list > li {
+    display: block;
+  }
+  .li_text span {
+    margin-right: 1rem;
+  }
   .li_text span:first-of-type {
     display: block;
+  }
+  .li_text span::before {
+    display: none;
   }
 }
