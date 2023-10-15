@@ -163,6 +163,7 @@ a {
   outline: none;
 }
 
+/* 스크롤 커스텀 */
 ::-webkit-scrollbar {
   width: 4px;
   height: 4px;

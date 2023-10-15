@@ -127,6 +127,18 @@ footer strong {
   font-weight: 700;
 }
 
+.career_year {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--main_header);
+  line-height: 1.4;
+}
+
+.career_list_row {
+  margin-bottom: 3rem;
+}
+
 .inner {
   display: block;
   max-width: 139rem;
@@ -394,7 +406,6 @@ footer strong {
   }
   #career {
     max-width: 100%;
-    padding: 0 2rem;
   }
   .main_title {
     text-align: center;
@@ -432,7 +443,7 @@ footer strong {
     content: "";
     position: absolute;
     opacity: 0.5;
-    top: 0.7rem;
+    top: 0.2rem;
     left: 0;
     z-index: 1;
     width: 0.4rem;
@@ -487,6 +498,14 @@ footer strong {
     min-width: 32rem;
   }
   .career_list > li {
+    display: block;
+  }
+  .li_title {
+    display: block;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+  .li_text {
     display: block;
   }
   .li_text span {
