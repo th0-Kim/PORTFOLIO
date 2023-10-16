@@ -506,11 +506,11 @@ footer strong {
     content: "";
     position: absolute;
     opacity: 0.5;
-    top: 0.2rem;
-    left: 0;
+    top: 0.4rem;
+    left: 0.4rem;
     z-index: 1;
-    width: 0.4rem;
-    height: 1.4rem;
+    width: 0.2rem;
+    height: 1.2rem;
     background-color: var(--color_487fb7);
   }
   .career_list .li_text {
