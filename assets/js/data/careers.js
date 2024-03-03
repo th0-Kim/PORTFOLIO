@@ -11,7 +11,7 @@ let lists = [
       {
         period: "2023.03.02 ~ 2024.2.29",
         project: "KT MVNO 고객 대통합 채널 운영",
-        kind: "반응형 웹",
+        kind: "반응형 웹, 웹 앱, 웹접근성, SEO",
         rate: "100",
       },
     ],
@@ -52,7 +52,7 @@ let lists = [
       {
         period: "2022.02.10 ~ 2022.12.30",
         project: "KT MVNO 고객 대통합 채널 구축",
-        kind: "반응형 웹, 웹접근성, SEO",
+        kind: "반응형 웹, 웹 앱, 웹접근성, SEO",
         rate: "70",
       },
     ],
