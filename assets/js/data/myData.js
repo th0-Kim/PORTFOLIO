@@ -52,13 +52,13 @@ let lists = [
       },
       {
         period: '2021.12.08 ~ 2022.02.25',
-        project: 'LG U+	UX DP 가이드 퍼블리싱 프로젝트',
+        project: 'LGU+	UX DP 가이드 퍼블리싱 프로젝트',
         kind: 'PC',
         rate: '40',
       },
       {
         period: '2022.07.02 ~ 2022.08.11',
-        project: 'Graphic Motif 메뉴얼 구축 프로젝트',
+        project: 'LGU+ 그래픽모티프 디지털 어플리케이션 개발',
         kind: '반응형 웹',
         rate: '100',
       },
