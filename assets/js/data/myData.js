@@ -5,7 +5,7 @@ let lists = [
       {
         period: '2023.12.11 ~ 2024.6.11',
         project: '진행중 프로젝트',
-        kind: '웹앱',
+        kind: '웹 앱',
         rate: '100',
       },
       {
@@ -32,10 +32,11 @@ let lists = [
         kind: '반응형 웹',
         rate: '60',
       },
+
       {
         period: '2023.02.13 ~ 2023.09.30',
         project: 'LG Shop time TV, 모바일 고도화 프로젝트',
-        kind: 'TV, 모바일',
+        kind: 'TV, 모바일 웹',
         rate: '70',
       },
     ],
@@ -50,10 +51,28 @@ let lists = [
         rate: '100',
       },
       {
+        period: '2021.12.08 ~ 2022.02.25',
+        project: 'LG U+	UX DP 가이드 퍼블리싱 프로젝트',
+        kind: 'PC',
+        rate: '40',
+      },
+      {
+        period: '2022.07.02 ~ 2022.08.11',
+        project: 'Graphic Motif 메뉴얼 구축 프로젝트',
+        kind: '반응형 웹',
+        rate: '100',
+      },
+      {
         period: '2022.02.10 ~ 2022.12.30',
         project: 'KT MVNO 고객 대통합 채널 구축',
         kind: '반응형 웹, 웹 앱, 웹접근성, SEO',
         rate: '70',
+      },
+      {
+        period: '2022.11.28 ~	2023.02.28',
+        project: '현대오토에버 디자인 시스템 구축 프로젝트',
+        kind: 'PC/모바일 웹 디자인 시스템',
+        rate: '20',
       },
     ],
   }, //2022
@@ -98,7 +117,7 @@ let lists = [
       {
         period: '2020.10.12 ~ 2021.07.14',
         project: 'Mobile B tv 이벤트 연간 운영',
-        kind: '모바일 웹',
+        kind: '모바일 웹앱',
         rate: '100',
       },
       {
@@ -128,7 +147,7 @@ let lists = [
       {
         period: '2020.04 ~ 2020.06',
         project: '신한은행 기업용 모바일앱 개편',
-        kind: '웹 앱',
+        kind: '모바일 웹 앱',
         rate: '40',
       },
     ],
@@ -208,8 +227,8 @@ let lists = [
       },
       {
         period: '2017.07 ~ 2017.08',
-        project: '회사 템플릿',
-        kind: 'CAFE24 반응형 웹',
+        project: 'CAFE24 템플릿',
+        kind: '반응형 웹',
         rate: '100',
       },
       {

@@ -4,6 +4,7 @@
   --color_black: #000;
   --color_333333: #333;
   --color_555555: #555555;
+  --color_2c42bd: #2c42bd;
   --color_37cd90: #37cd90;
   --color_e84b80: #e84b80;
   --color_f98500: #f98500;
@@ -126,6 +127,13 @@ footer strong {
   display: block;
   max-width: 139rem;
   margin: 0 auto;
+}
+
+.my_intro_area {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--main_top_title);
+  line-height: 1.4;
 }
 
 .my_title {
@@ -255,7 +263,7 @@ footer strong {
 .portfolio_wrap .sub_title:not([href*="javascript:void(0);"]):before {
   background-image: url("../images/icon_link.png");
 }
-.portfolio_wrap .thumb_box {
+.portfolio_wrap .top_area {
   overflow: hidden;
   display: block;
   width: 100%;
@@ -265,7 +273,7 @@ footer strong {
   border: 1px solid rgba(0, 149, 255, 0.49);
   text-align: center;
 }
-.portfolio_wrap .thumb_box img {
+.portfolio_wrap .top_area img {
   display: block;
   width: 100%;
   height: auto;
@@ -297,6 +305,9 @@ footer strong {
   font-weight: 500;
   color: var(--color_white);
   line-height: 1.4;
+}
+.portfolio_wrap .skill_label .label_blue {
+  background-color: var(--color_2c42bd);
 }
 .portfolio_wrap .skill_label .label_green {
   background-color: var(--color_37cd90);
@@ -436,6 +447,7 @@ footer strong {
   }
   .my_intro_area {
     margin-bottom: 7rem;
+    font-size: 1.6rem;
   }
   .my_ability_area {
     margin: 0 auto;
