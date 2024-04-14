@@ -372,6 +372,9 @@ footer strong {
   border-top: 1px solid var(--color_dddddd);
 }
 .career_list > li {
+  padding: 2rem 0;
+}
+.career_list .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -385,7 +388,6 @@ footer strong {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 2rem 0;
 }
 .career_list .li_title {
   font-size: 1.6rem;
@@ -407,6 +409,13 @@ footer strong {
   height: 1.5rem;
   background-color: var(--color_dddddd);
   vertical-align: middle;
+}
+.career_list .li_content {
+  margin-top: 0.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--color_555555);
+  line-height: 1.4;
 }
 .career_list .rate {
   font-size: 1.6rem;
@@ -486,17 +495,6 @@ footer strong {
   .container {
     padding-top: 0;
   }
-  /* 포트폴리오 */
-  .portfolio_wrap .portfolio {
-    margin: 0;
-  }
-  .portfolio_wrap .list_item {
-    width: calc(100% - 4rem);
-    margin: 7rem auto 0;
-  }
-  .portfolio_wrap .list_item:first-child {
-    margin-top: 3rem;
-  }
   /* 경력 */
   #career {
     max-width: 100%;
@@ -507,12 +505,16 @@ footer strong {
   .career_wrap .main_title {
     font-size: 2.2em;
   }
+  .career_list .li_title,
+  .career_list .li_text,
+  .career_list .li_content {
+    padding-left: 1.5rem;
+  }
   .career_list .li_title {
     position: relative;
     -ms-flex-negative: 0;
     flex-shrink: 0;
     width: 11rem;
-    padding-left: 1.5rem;
   }
   .career_list .li_title:before {
     content: "";
@@ -524,9 +526,6 @@ footer strong {
     width: 0.2rem;
     height: 1.2rem;
     background-color: var(--color_487fb7);
-  }
-  .career_list .li_text {
-    padding-left: 1.5rem;
   }
   .career_list .li_text span:before {
     content: "/";
@@ -542,7 +541,7 @@ footer strong {
     font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px) {
   .inner,
   .main_title {
     width: 100%;
@@ -555,22 +554,26 @@ footer strong {
   .my_ability_area {
     max-width: 35rem;
   }
-  .career_list > li {
+  /* 포트폴리오 */
+  .portfolio_wrap .portfolio {
+    margin: 0;
+  }
+  .portfolio_wrap .list_item {
+    width: calc(100% - 4rem);
+    margin: 7rem auto 0;
+  }
+  .portfolio_wrap .list_item:first-child {
+    margin-top: 3rem;
+  }
+  /* 경력 */
+  .career_list .flex {
     display: block;
   }
   .career_list .li_title {
-    display: block;
-    width: 100%;
     margin-bottom: 0.5rem;
-  }
-  .career_list .li_text {
-    display: block;
   }
   .career_list .li_text span {
     margin-right: 1rem;
-  }
-  .career_list .li_text span:first-of-type {
-    display: block;
   }
   .career_list .li_text span::before {
     display: none;
